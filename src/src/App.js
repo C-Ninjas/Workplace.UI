@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import axios from "axios";
+import cancel from './cancel.png';
 
 const resources = [
   { label: " 🖥️ Desk", value: "Desk" },
@@ -120,6 +121,7 @@ class App extends React.Component {
                       <div>Booked By : {booking.bookedBy}</div>
                       <div>Booked For : {booking.bookedFor}</div>
                       <div>Date : {booking.date}</div>
+                      <a href="#"><img class="cancel" title="Cancel Booking" src={cancel} alt="Logo" /></a>
                     </div>
                 )
             }
