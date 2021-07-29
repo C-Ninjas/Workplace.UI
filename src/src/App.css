@@ -3,6 +3,7 @@
   align-self: center;
   align-content: center;
   display: flex;
+  margin-top: 5px;
   justify-content: center;
   flex-direction: column;
 }
